@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>សិរីមង្គលអាពាហ៍ពិពាហ៍ | វ៉ាន ច័ន្ទគ្រឹស្នា & មិន ស្រីលក្ខ</title>
+<meta name="description" content="សូមគោរពអញ្ជើញចូលរួមពិធីមង្គលការ ថ្ងៃទី២១-២២ ខែវិច្ឆិកា ឆ្នាំ២០២៦ ខេត្តបាត់ដំបង | Wedding of Van Chankrisna & Min Sreylak">
+<meta name="theme-color" content="#545f47">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ | វ៉ាន ច័ន្ទគ្រឹស្នា &amp; មិន ស្រីលក្ខ">
+<meta property="og:description" content="សូមគោរពអញ្ជើញចូលរួមពិធីមង្គលការ ថ្ងៃទី២១-២២ ខែវិច្ឆិកា ឆ្នាំ២០២៦ ខេត្តបាត់ដំបង">
+<meta property="og:image" content="/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23545f47'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='26' fill='%23f3efe6' text-anchor='middle'%3EC%7CS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Battambang:wght@400;700&family=Moul&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f0e7; --paper2:#ebe5d7; --sage:#8b9a7c; --sage-l:#b7c1a8; --olive:#545f47; --olive-d:#454f3a;
+  --ink:#3d4635; --muted:#6f7865; --gold:#b39a62; --gold-l:#d9c79c; --line:rgba(84,95,71,.22);
+  --serif:'Cormorant Garamond',Georgia,serif; --script:'Pinyon Script',cursive; --km:'Battambang',sans-serif; --km-title:'Moul',serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--km);color:var(--ink);line-height:1.65;
+  background:#e7e2d6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .33 0 0 0 0 .25 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+body.locked{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* ===== layout: 3 panels (desktop) / stacked (mobile) ===== */
+.stage{display:grid;grid-template-columns:1fr;max-width:480px;margin:0 auto;gap:0}
+@media(min-width:1100px){
+  .stage{grid-template-columns:repeat(3,minmax(0,400px));justify-content:center;gap:22px;max-width:none;padding:40px 24px 30px;align-items:start}
+  .panel{border-radius:4px;box-shadow:0 18px 40px -18px rgba(50,55,40,.45)}
+}
+.panel{position:relative;overflow:hidden;padding:0 26px 40px}
+.paper{background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.dark{background:var(--olive);color:#f1ede2}
+.dark::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:radial-gradient(120% 60% at 20% 0%,rgba(255,255,255,.08),transparent 60%),radial-gradient(90% 50% at 100% 100%,rgba(0,0,0,.18),transparent 70%)}
+.dark>*{position:relative}
+.wash{position:absolute;left:0;width:100%;height:150px;pointer-events:none}
+.wash.top{top:0}
+.wash.bot{bottom:-1px;transform:scaleY(-1)}
+.branch{position:absolute;width:150px;height:190px;pointer-events:none;opacity:.95}
+.branch.tr{top:-8px;right:-14px}
+.branch.tl{top:-8px;left:-14px;transform:scaleX(-1)}
+.branch.bl{bottom:-10px;left:-18px;transform:rotate(180deg) scaleX(-1)}
+.pad-top{padding-top:110px}
+.stage>.panel:first-child{padding-bottom:150px}
+@media(max-width:1099px){#wishes>.wash.top{display:none}.wish-head{padding-top:40px}#wishes .branch.tl{display:none}}
+
+/* ===== typography ===== */
+.caps{font-family:var(--serif);letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.script{font-family:var(--script);font-weight:400}
+.center{text-align:center}
+.tiny{font-size:.72rem}
+.km-sub{font-size:.82rem;color:var(--muted)}
+.dark .km-sub{color:#d6d9c9}
+.divider{display:flex;align-items:center;justify-content:center;gap:10px;margin:14px auto;color:var(--gold)}
+.divider::before,.divider::after{content:"";height:1px;width:64px;background:currentColor;opacity:.6}
+.divider svg{width:14px;height:14px}
+.sec-title{text-align:center;margin:34px 0 6px}
+.sec-title .caps{font-size:1.05rem;color:var(--ink)}
+.dark .sec-title .caps{color:#f1ede2}
+.sec-title .km{display:block;font-family:var(--km-title);font-size:.92rem;color:var(--olive);margin-top:4px;letter-spacing:0}
+.dark .sec-title .km{color:var(--gold-l)}
+
+/* ===== envelope / cover ===== */
+#cover{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px;background:var(--olive);color:#f1ede2;transition:opacity .9s ease,visibility .9s}
+#cover.gone{opacity:0;visibility:hidden}
+#cover .card{position:relative;width:min(420px,100%);text-align:center;padding:56px 28px 44px;border:1px solid rgba(217,199,156,.45);border-radius:200px 200px 6px 6px;background:rgba(255,255,255,.04)}
+#cover .card::after{content:"";position:absolute;inset:8px;border:1px solid rgba(217,199,156,.2);border-radius:194px 194px 3px 3px;pointer-events:none}
+#cover .mono{font-family:var(--serif);font-size:2.6rem;letter-spacing:.12em;color:var(--gold-l)}
+#cover .mono span{font-weight:300;opacity:.6;margin:0 .1em}
+#cover .names{font-family:var(--km-title);font-size:1rem;line-height:2;margin:12px 0 2px}
+#cover .en{font-family:var(--serif);font-size:1rem;letter-spacing:.18em;text-transform:uppercase;opacity:.85}
+#cover .inv{margin-top:26px;font-size:.88rem;opacity:.9}
+#cover .hon{font-size:.95rem;color:var(--gold-l);min-height:1.4em;margin-top:10px}
+#cover .guest{font-family:var(--km-title);font-size:1.35rem;margin:4px 0 0;min-height:1.6em;word-break:break-word}
+#openBtn{margin-top:28px;padding:12px 28px;border:0;border-radius:999px;background:#efe9db;color:var(--olive);font-family:var(--km);font-weight:700;font-size:.92rem;box-shadow:0 8px 24px -10px rgba(0,0,0,.5);transition:transform .2s}
+#openBtn:hover{transform:translateY(-2px)}
+#openBtn small{display:block;font-family:var(--serif);letter-spacing:.2em;font-weight:500;font-size:.7rem;opacity:.75}
+
+/* ===== panel 1: hero ===== */
+.mono{font-family:var(--serif);font-size:2.4rem;color:var(--olive);text-align:center;letter-spacing:.14em;line-height:1}
+.mono span{font-weight:300;color:var(--gold);margin:0 .12em}
+.laurel{display:block;width:70px;margin:4px auto 0;color:var(--gold)}
+.together{text-align:center;margin:18px 0 10px}
+.together .caps{font-size:.68rem;color:var(--muted);line-height:1.8}
+.couple{text-align:center}
+.couple .en{font-family:var(--serif);font-size:1.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);line-height:1.1}
+.couple .km{font-family:var(--km-title);font-size:.86rem;color:var(--olive);margin:6px 0 0}
+.couple .and{font-family:var(--script);font-size:2.2rem;color:var(--gold);line-height:1;margin:8px 0}
+.date-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:6px;font-family:var(--serif);color:var(--ink)}
+.date-row .side{font-size:.85rem;letter-spacing:.25em;padding:6px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-width:62px}
+.date-row .day{font-size:2.6rem;line-height:1;font-weight:500}
+.weekday{text-align:center;font-family:var(--serif);letter-spacing:.3em;font-size:.72rem;color:var(--muted);margin-top:6px}
+.date-km{text-align:center;font-size:.82rem;color:var(--olive);margin-top:4px}
+
+.photo-wrap{position:relative;margin:24px -26px 0}
+.photo-wrap img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 70%,transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 16%,#000 70%,transparent 100%)}
+.player{position:relative;margin:-120px 6px 0;padding:14px 18px 12px;border-radius:14px;background:rgba(69,79,58,.78);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#f1ede2;border:1px solid rgba(255,255,255,.15);box-shadow:0 14px 30px -14px rgba(0,0,0,.5)}
+.player .t{text-align:center;font-family:var(--serif);font-size:1.05rem;letter-spacing:.05em}
+.player .a{text-align:center;font-size:.72rem;opacity:.75}
+.bar{position:relative;height:3px;border-radius:3px;background:rgba(255,255,255,.25);margin:12px 0 4px;cursor:pointer}
+.bar i{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--gold-l);border-radius:3px}
+.bar i::after{content:"";position:absolute;right:-4px;top:-3px;width:9px;height:9px;border-radius:50%;background:#fff}
+.times{display:flex;justify-content:space-between;font-family:var(--serif);font-size:.72rem;opacity:.8}
+.ctrls{display:flex;align-items:center;justify-content:center;gap:26px;margin-top:4px}
+.ctrls button{background:none;border:0;color:inherit;padding:4px;display:grid;place-items:center;opacity:.9}
+.ctrls svg{width:20px;height:20px}
+.ctrls .pp{width:44px;height:44px;border-radius:50%;background:#f1ede2;color:var(--olive);opacity:1}
+.ctrls .pp svg{width:18px;height:18px}
+
+.parents{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:center;margin-top:16px}
+.parents .lbl{font-family:var(--serif);letter-spacing:.2em;text-transform:uppercase;font-size:.66rem;color:var(--gold)}
+.parents .p{font-size:.86rem;line-height:1.9}
+.parents .kid{margin-top:10px;font-size:.78rem;color:var(--muted)}
+.parents .kid b{display:block;font-family:var(--km-title);font-weight:400;font-size:.86rem;color:var(--olive)}
+.invite{text-align:center;font-size:.86rem;margin-top:18px}
+.invite p{margin:0 0 10px}
+.invite .en{font-family:var(--serif);font-size:1rem;font-style:italic;color:var(--muted);line-height:1.5}
+
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.count div{text-align:center;padding:12px 0 8px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.35)}
+.count b{display:block;font-family:var(--serif);font-size:1.7rem;font-weight:500;line-height:1;color:var(--olive)}
+.count span{font-size:.66rem;color:var(--muted)}
+.count-done{text-align:center;font-family:var(--script);font-size:2rem;color:var(--gold);margin-top:10px}
+
+/* ===== panel 2: timeline ===== */
+.bigday{text-align:center;padding-top:96px}
+.bigday .script{font-size:2.6rem;color:var(--gold-l);line-height:1}
+.bigday .caps{font-size:1.5rem;letter-spacing:.18em;margin-top:2px}
+.dayhead{margin:30px 0 10px;text-align:center}
+.dayhead .caps{font-size:.78rem;color:var(--gold-l)}
+.dayhead .km{font-size:.86rem;opacity:.9}
+.tl{position:relative;list-style:none;margin:0;padding:6px 0 0}
+.tl::before{content:"";position:absolute;left:21px;top:14px;bottom:14px;width:1px;background:rgba(241,237,226,.35)}
+.tl li{position:relative;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:9px 0}
+.tl .ic{width:44px;height:44px;border-radius:50%;background:#efe9db;color:var(--olive);display:grid;place-items:center;box-shadow:0 0 0 5px var(--olive)}
+.tl .ic svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.tl .tm{font-family:var(--serif);font-weight:600;font-size:.92rem;letter-spacing:.06em}
+.tl .tm small{font-family:var(--km);font-weight:400;font-size:.74rem;opacity:.75;letter-spacing:0;margin-left:6px}
+.tl .what{font-size:.86rem;line-height:1.55}
+.tl .what em{display:block;font-family:var(--serif);font-size:.92rem;opacity:.78}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid currentColor;text-decoration:none;font-size:.8rem;background:transparent;color:inherit;transition:background .2s,color .2s}
+.btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
+.dark .btn:hover{background:#efe9db;color:var(--olive)}
+.btn.solid{background:var(--olive);border-color:var(--olive);color:#f1ede2}
+.btn.solid:hover{background:var(--olive-d)}
+.paper .btn:not(.solid):hover{background:var(--olive);color:#f1ede2;border-color:var(--olive)}
+
+.gift{text-align:center;margin-top:40px;padding-top:30px;border-top:1px solid rgba(241,237,226,.2)}
+.gift .gi{width:58px;height:58px;margin:0 auto 10px;border:1px solid rgba(241,237,226,.5);border-radius:50%;display:grid;place-items:center}
+.gift .gi svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4}
+.gift .caps{font-size:.92rem;letter-spacing:.2em;line-height:1.5}
+.gift p{font-size:.84rem;margin:12px 4px}
+.gift p.en{font-family:var(--serif);font-style:italic;font-size:.98rem;opacity:.85;margin-top:0}
+.qr{width:200px;margin:18px auto 0;padding:8px;background:#fff;border-radius:10px;box-shadow:0 10px 26px -12px rgba(0,0,0,.5);cursor:zoom-in}
+.qr img{border-radius:6px}
+
+/* ===== panel 3 ===== */
+.wish-head{text-align:center;padding-top:84px}
+.wish-head .caps{font-size:1.6rem;letter-spacing:.2em;color:var(--ink)}
+.wish-head .km{font-family:var(--km-title);color:var(--olive);font-size:.9rem}
+.form{margin-top:16px;display:grid;gap:10px}
+.form input,.form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6);font:inherit;font-size:.88rem;color:var(--ink);resize:none;outline:none;transition:border-color .2s,box-shadow .2s}
+.form input:focus,.form textarea:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(139,154,124,.2)}
+.form .btn{justify-self:center;padding:11px 26px;font-weight:700}
+.form-msg{text-align:center;font-size:.8rem;min-height:1.3em;color:var(--olive)}
+.form-msg.err{color:#a0483a}
+
+.info{list-style:none;padding:0;margin:8px 0 0}
+.info li{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.info li:last-child{border-bottom:0}
+.info .ic{width:40px;height:40px;display:grid;place-items:center;color:var(--olive)}
+.info .ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.info h4{margin:0;font-family:var(--serif);letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:600}
+.info p{margin:2px 0 0;font-size:.82rem;color:var(--muted)}
+.info a.lnk{color:var(--olive);font-weight:700;text-decoration:none;border-bottom:1px solid var(--sage-l)}
+.mapimg{margin-top:8px;border-radius:8px;border:1px solid var(--line);cursor:zoom-in}
+
+.quote{position:relative;margin:30px 0 0;padding:40px 22px 22px;border:1px solid var(--line);border-radius:6px;text-align:center;background:rgba(255,255,255,.35)}
+.quote::before{content:"\201C";position:absolute;top:-14px;left:50%;transform:translateX(-50%);font-family:var(--serif);font-size:3.2rem;line-height:1;color:var(--gold);background:var(--paper);padding:0 8px}
+.quote p{margin:0 0 10px;font-size:.84rem}
+.quote p.en{font-family:var(--serif);font-style:italic;font-size:1.02rem;color:var(--muted);line-height:1.5}
+.arch{margin:30px auto 0;width:86%;aspect-ratio:3/4;border-radius:999px 999px 6px 6px;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 40px -20px rgba(50,55,40,.6)}
+.arch img{width:100%;height:100%;object-fit:cover}
+
+.wishes{display:grid;gap:10px;margin-top:14px;max-height:520px;overflow:auto;padding-right:4px}
+.wishes:empty::before{content:"សូមជាអ្នកដំបូងដែលផ្ញើពរ 🌿";display:block;text-align:center;font-size:.82rem;color:var(--muted);padding:12px}
+.w{padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.55);border:1px solid var(--line)}
+.w .n{font-weight:700;font-size:.84rem;color:var(--olive)}
+.w .m{font-size:.84rem;white-space:pre-wrap;word-break:break-word;margin-top:2px}
+.w .ago{font-size:.68rem;color:var(--muted);margin-top:4px}
+
+.gallery{columns:2;column-gap:8px;margin-top:14px}
+.gallery img{width:100%;margin-bottom:8px;border-radius:6px;cursor:zoom-in;break-inside:avoid}
+
+.apology{margin-top:30px;text-align:center;font-size:.8rem;color:var(--muted)}
+.apology h4{margin:0 0 6px;font-family:var(--km-title);font-weight:400;color:var(--olive);font-size:.86rem}
+.apology .en{font-family:var(--serif);font-style:italic;font-size:.92rem}
+
+footer{text-align:center;padding:30px 20px 40px;color:var(--olive)}
+footer .caps{font-size:.78rem;letter-spacing:.3em}
+footer .script{font-size:1.8rem;color:var(--gold)}
+
+/* ===== misc ===== */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.reveal.in{opacity:1;transform:none}
+#lb{position:fixed;inset:0;z-index:60;background:rgba(30,34,26,.92);display:none;place-items:center;padding:20px}
+#lb.on{display:grid}
+#lb img{max-height:90vh;max-width:100%;border-radius:6px}
+#lb button{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:1.4rem}
+#musicFab{position:fixed;right:16px;bottom:16px;z-index:40;width:46px;height:46px;border-radius:50%;border:0;background:var(--olive);color:#f1ede2;display:none;place-items:center;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+#musicFab.on{display:grid}
+#musicFab svg{width:20px;height:20px}
+#musicFab.playing svg{animation:spin 4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}#musicFab.playing svg{animation:none}}
+</style>
+</head>
+<body class="locked">
+
+<!-- ===== reusable art ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="torn" x="-5%" y="-5%" width="110%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="4" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="22"/>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+    <linearGradient id="sageG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f7d61"/><stop offset=".6" stop-color="#8b9a7c" stop-opacity=".85"/><stop offset="1" stop-color="#b7c1a8" stop-opacity=".25"/>
+    </linearGradient>
+    <linearGradient id="creamG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e3d4"/><stop offset="1" stop-color="#f4f0e7" stop-opacity=".2"/>
+    </linearGradient>
+    <symbol id="leafs" viewBox="0 0 150 190">
+      <path d="M140 0 C120 40 95 70 70 100 C50 125 40 150 36 186" fill="none" stroke="#9a8758" stroke-width="1.3"/>
+      <g fill="#8b9a7c">
+        <ellipse cx="0" cy="0" rx="9" ry="22" transform="translate(126 26) rotate(-60)" opacity=".9"/>
+        <ellipse cx="0" cy="0" rx="8" ry="20" transform="translate(108 30) rotate(25)" opacity=".7"/>
+        <ellipse cx="0" cy="0" rx="9" ry="22" transform="translate(108 62) rotate(-70)" opacity=".85"/>
+        <ellipse cx="0" cy="0" rx="8" ry="19" transform="translate(86 64) rotate(20)" opacity=".6"/>
+        <ellipse cx="0" cy="0" rx="9" ry="21" transform="translate(88 98) rotate(-75)" opacity=".8"/>
+        <ellipse cx="0" cy="0" rx="8" ry="18" transform="translate(62 100) rotate(15)" opacity=".55"/>
+        <ellipse cx="0" cy="0" rx="8" ry="19" transform="translate(64 134) rotate(-70)" opacity=".75"/>
+        <ellipse cx="0" cy="0" rx="7" ry="16" transform="translate(42 140) rotate(10)" opacity=".5"/>
+      </g>
+      <g fill="none" stroke="#b39a62" stroke-width="1">
+        <ellipse cx="0" cy="0" rx="7" ry="17" transform="translate(132 54) rotate(-40)"/>
+        <ellipse cx="0" cy="0" rx="6" ry="15" transform="translate(52 168) rotate(-55)"/>
+        <path d="M126 70 L138 40 M46 182 L58 156"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== cover / envelope ===== -->
+<div id="cover" role="dialog" aria-label="សំបុត្រអញ្ជើញ">
+  <div class="card">
+    <div class="mono">C<span>|</span>S</div>
+    <div class="names">វ៉ាន ច័ន្ទគ្រឹស្នា &amp; មិន ស្រីលក្ខ</div>
+    <div class="en">Chankrisna &amp; Sreylak</div>
+    <div class="inv">សូមគោរពអញ្ជើញ<br><span style="font-family:var(--serif);font-style:italic;font-size:1rem">We cordially invite</span></div>
+    <div class="hon" id="envHon"></div>
+    <div class="guest" id="envName">ភ្ញៀវកិត្តិយស</div>
+    <button id="openBtn" type="button">បើកសំបុត្រ<small>OPEN INVITATION</small></button>
+  </div>
+</div>
+
+<main class="stage">
+
+  <!-- ================= PANEL 1 ================= -->
+  <section class="panel paper">
+    <svg class="wash top" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0H400V70C340 96 290 60 230 84S120 110 70 88 10 92 0 96Z" fill="url(#sageG)" filter="url(#torn)"/>
+      <path d="M0 0H400V40C330 60 260 36 200 54S80 66 0 52Z" fill="#6f7d61" opacity=".35" filter="url(#soft)"/>
+    </svg>
+    <svg class="branch tr" aria-hidden="true"><use href="#leafs"/></svg>
+
+    <div class="pad-top reveal">
+      <div class="mono">C<span>|</span>S</div>
+      <svg class="laurel" viewBox="0 0 70 18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1"><path d="M35 15C25 15 14 11 6 3M35 15c10 0 21-4 29-12"/><ellipse cx="12" cy="9" rx="2.2" ry="4.5" transform="rotate(-55 12 9)"/><ellipse cx="20" cy="12" rx="2.2" ry="4.5" transform="rotate(-65 20 12)"/><ellipse cx="58" cy="9" rx="2.2" ry="4.5" transform="rotate(55 58 9)"/><ellipse cx="50" cy="12" rx="2.2" ry="4.5" transform="rotate(65 50 12)"/></g></svg>
+    </div>
+
+    <div class="together reveal">
+      <div class="caps">ជាមួយក្រុមគ្រួសារទាំងសងខាង<br>Together with their families</div>
+    </div>
+
+    <div class="couple reveal">
+      <div class="en">Van Chankrisna</div>
+      <div class="km">វ៉ាន ច័ន្ទគ្រឹស្នា</div>
+      <div class="and">and</div>
+      <div class="en">Min Sreylak</div>
+      <div class="km">មិន ស្រីលក្ខ</div>
+    </div>
+
+    <div class="divider reveal"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div>
+
+    <div class="reveal">
+      <div class="date-row"><div class="side">NOV</div><div class="day">22</div><div class="side">2026</div></div>
+      <div class="weekday">SATURDAY 21 · SUNDAY 22</div>
+      <div class="date-km">ថ្ងៃសៅរ៍-អាទិត្យ ទី២១-២២ ខែវិច្ឆិកា ឆ្នាំ២០២៦</div>
+    </div>
+
+    <div class="photo-wrap reveal">
+      <img src="img/hero.jpg" alt="វ៉ាន ច័ន្ទគ្រឹស្នា និង មិន ស្រីលក្ខ" width="933" height="1400" fetchpriority="high">
+    </div>
+    <div class="player reveal" aria-label="តន្ត្រី">
+      <div class="t">Our Wedding Song</div>
+      <div class="a">បទភ្លេងសម្រាប់ថ្ងៃមង្គលរបស់យើង</div>
+      <div class="bar" id="bar"><i id="barFill"></i></div>
+      <div class="times"><span id="tCur">0:00</span><span id="tDur">0:00</span></div>
+      <div class="ctrls">
+        <button type="button" id="back10" aria-label="ថយក្រោយ ១០ វិនាទី"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 12a8 8 0 1 0 2.3-5.7M4 4v4h4"/></svg></button>
+        <button type="button" class="pp" id="ppBtn" aria-label="ចាក់ / ផ្អាក"><svg id="ppIcon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg></button>
+        <button type="button" id="fwd10" aria-label="ទៅមុខ ១០ វិនាទី"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v4h-4"/></svg></button>
+      </div>
+    </div>
+
+    <div class="sec-title reveal"><span class="caps">Our Parents</span><span class="km">ឪពុកម្តាយទាំងសងខាង</span></div>
+    <div class="parents reveal">
+      <div>
+        <div class="lbl">Groom's parents</div>
+        <div class="p">លោក វ៉ាន ផុន<br>លោកស្រី ផាត ឈួត</div>
+        <div class="kid">កូនប្រុសនាម<b>វ៉ាន ច័ន្ទគ្រឹស្នា</b></div>
+      </div>
+      <div>
+        <div class="lbl">Bride's parents</div>
+        <div class="p">លោក មិន វណ្ណា<br>លោកស្រី ឆេង សុខនា</div>
+        <div class="kid">កូនស្រីនាម<b>មិន ស្រីលក្ខ</b></div>
+      </div>
+    </div>
+
+    <div class="invite reveal">
+      <div class="divider"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg></div>
+      <p>មានកិត្តិយសសូមគោរពអញ្ជើញ ឯកឧត្តម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្តទាំងអស់ អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធិពរជ័យ សិរីសួស្ដី ជ័យមង្គល ក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ។</p>
+      <p class="en">It is our honor to invite Excellencies, Oknhas, ladies, gentlemen and friends to preside over and attend as honored guests, and to bestow blessings upon the wedding of our son and daughter.</p>
+    </div>
+
+    <div class="sec-title reveal"><span class="caps">Counting down</span><span class="km">រាប់ថយក្រោយដល់ថ្ងៃមង្គល</span></div>
+    <div class="count reveal" id="count">
+      <div><b id="cD">00</b><span>ថ្ងៃ · Days</span></div>
+      <div><b id="cH">00</b><span>ម៉ោង · Hrs</span></div>
+      <div><b id="cM">00</b><span>នាទី · Min</span></div>
+      <div><b id="cS">00</b><span>វិនាទី · Sec</span></div>
+    </div>
+
+    <svg class="branch bl" aria-hidden="true"><use href="#leafs"/></svg>
+  </section>
+
+  <!-- ================= PANEL 2 ================= -->
+  <section class="panel dark" id="schedule">
+    <svg class="wash top" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0H400V48C350 70 300 40 240 62S120 80 70 60 20 66 0 70Z" fill="url(#creamG)" filter="url(#torn)"/>
+    </svg>
+    <svg class="branch tr" aria-hidden="true" style="opacity:.6"><use href="#leafs"/></svg>
+
+    <div class="bigday reveal">
+      <div class="script">Our</div>
+      <div class="caps">Big Day</div>
+      <div class="km-sub" style="margin-top:4px">របៀបវារៈកម្មវិធី</div>
+      <div class="divider" style="color:var(--gold-l)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div>
+    </div>
+
+    <div class="dayhead reveal"><div class="caps">Saturday · November 21, 2026</div><div class="km">ថ្ងៃសៅរ៍ ទី២១ ខែវិច្ឆិកា ឆ្នាំ២០២៦</div></div>
+    <ol class="tl">
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M8.2 7.8 20 18M8.2 16.2 20 6"/></svg></div>
+        <div><div class="tm">1:00 PM<small>១៣:០០ រសៀល</small></div><div class="what">ប្រារព្ធពិធីកាត់សក់<em>Hair-Cutting Ceremony</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20c-4 0-8-2-9-6 3 0 6 1 9 4 3-3 6-4 9-4-1 4-5 6-9 6z"/><path d="M12 18c-2-2-3-5-3-8 1-2 2-4 3-5 1 1 2 3 3 5 0 3-1 6-3 8z"/></svg></div>
+        <div><div class="tm">3:30 PM<small>១៥:៣០ ល្ងាច</small></div><div class="what">សូត្រមន្ត<em>Chanting of Mantras</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 3v18M4.5 3v5a2.5 2.5 0 0 0 5 0V3M17 21V3c-2 1-3.5 4-3.5 8H17"/></svg></div>
+        <div><div class="tm">5:00 PM<small>១៧:០០ ល្ងាច</small></div><div class="what">អាហារពេលល្ងាច<em>Dinner</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="14.5" r="5"/><circle cx="15" cy="14.5" r="5"/><path d="M10 6l2-2.5L14 6l-2 2z"/></svg></div>
+        <div><div class="tm">6:00 PM<small>១៨:០០ ល្ងាច</small></div><div class="what">ពិធីបំពាក់ចិញ្ចៀន<em>Ring-Wearing Ceremony</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div>
+        <div><div class="tm">7:00 PM<small>១៩:០០ ល្ងាច</small></div><div class="what">ខាត់ខាន់ស្លា<em>Khat Khan Sla</em></div></div></li>
+    </ol>
+
+    <div class="dayhead reveal"><div class="caps">Sunday · November 22, 2026</div><div class="km">ថ្ងៃអាទិត្យ ទី២២ ខែវិច្ឆិកា ឆ្នាំ២០២៦</div></div>
+    <ol class="tl">
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15.5 14.5c3 0 5.5 2 5.5 5.5"/></svg></div>
+        <div><div class="tm">7:00 AM<small>០៧:០០ ព្រឹក</small></div><div class="what">ជួបជុំភ្ញៀវកិត្តិយសរៀបចំជំនូន<em>Gathering to arrange the ceremonial gifts</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="4" rx="1"/><path d="M5 13v8h14v-8M12 9v12M12 9C10 5 6 5 6 7.5S9 9 12 9zM12 9c2-4 6-4 6-1.5S15 9 12 9z"/></svg></div>
+        <div><div class="tm">7:30 AM<small>០៧:៣០ ព្រឹក</small></div><div class="what">ពិធីហែជំនូនកំណត់ចូលរោងជ័យ<em>Procession of the wedding gifts</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <div><div class="tm">8:30 AM<small>០៨:៣០ ព្រឹក</small></div><div class="what">ពិធីចៅមហានិយាយជើងការ និងសែនព្រាន<em>Chao Maha Niyay &amp; Sen Prian</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></div>
+        <div><div class="tm">9:30 AM<small>០៩:៣០ ព្រឹក</small></div><div class="what">ពិធីសំពះផ្ទឹម ចងដៃ បង្វិលពពិល និងព្រះថោងតោងស្បៃ<em>Sampeah Phtim, wrist-tying &amp; Popil circling</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c1.5 2 1.5 3.5 0 5-1.5-1.5-1.5-3 0-5zM9 10h6v10H9zM6 21h12"/></svg></div>
+        <div><div class="tm">11:00 AM<small>១១:០០ ព្រឹក</small></div><div class="what">ពិធីសែនកុងម៉ា<em>Ancestor Worship Ceremony</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 3v18M4.5 3v5a2.5 2.5 0 0 0 5 0V3M17 21V3c-2 1-3.5 4-3.5 8H17"/></svg></div>
+        <div><div class="tm">11:30 AM<small>១១:៣០ ព្រឹក</small></div><div class="what">អាហារថ្ងៃត្រង់<em>Lunch</em></div></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M8 3h8l-1 7a3 3 0 0 1-6 0zM12 13v7M8 21h8"/></svg></div>
+        <div><div class="tm">5:00 PM<small>១៧:០០ ល្ងាច</small></div><div class="what">ពិធីទទួលភ្ញៀវកិត្តិយសពិសាភោជនាហារ នៅគេហដ្ឋានខាងស្រី<em>Reception &amp; dinner at the bride's home</em></div></div></li>
+    </ol>
+
+    <div class="btns reveal">
+      <a class="btn" href="wedding.ics" download><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>រក្សាទុកក្នុងប្រតិទិន</a>
+      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=%E1%9E%96%E1%9E%B7%E1%9E%92%E1%9E%B8%E1%9E%87%E1%9E%94%E1%9F%8B%E1%9E%9B%E1%9F%80%E1%9E%84%E1%9E%98%E1%9E%84%E1%9F%92%E1%9E%82%E1%9E%9B%E1%9E%80%E1%9E%B6%E1%9E%9A%20-%20Van%20Chankrisna%20%26%20Min%20Sreylak&amp;dates=20261122T170000%2F20261122T220000&amp;ctz=Asia%2FPhnom_Penh&amp;details=The%20wedding%20dinner%20reception%20will%20be%20held%20on%20November%2022%2C%202026%2C%20at%205%3A00%20PM.%0A%0AGoogle%20Map%3A%20https%3A%2F%2Fmaps.app.goo.gl%2FtrofWD7W4vPz9mzH9&amp;location=Battambang%20City">Google Calendar</a>
+    </div>
+
+    <div class="gift reveal" id="gift">
+      <div class="gi"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="4" rx="1"/><path d="M5 13v8h14v-8M12 9v12M12 9C10 5 6 5 6 7.5S9 9 12 9zM12 9c2-4 6-4 6-1.5S15 9 12 9z"/></svg></div>
+      <div class="caps">Your presence<br>is the best gift</div>
+      <div class="km-sub" style="margin-top:4px">វត្តមានរបស់លោកអ្នក គឺជាកាដូដ៏មានតម្លៃបំផុត</div>
+      <p>សម្រាប់ញាតិមិត្តដែលមិនអាចអញ្ជើញចូលរួមបាន ប៉ុន្តែមានបំណងផ្ញើចំណងដៃ សូមប្រើ QR Code ខាងក្រោមដោយក្ដីអនុគ្រោះ។</p>
+      <p class="en">For loved ones who cannot attend but wish to send a gift, please kindly use the QR code below.</p>
+      <div class="qr" data-zoom="img/qr.jpg"><img src="img/qr.jpg" alt="ABA QR សម្រាប់ចំណងដៃ" loading="lazy"></div>
+      <div class="btns"><a class="btn" href="https://t.me/brochhay2026" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l12-9"/></svg>ទាក់ទងតាម Telegram</a></div>
+    </div>
+
+    <svg class="wash bot" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 -20H400V40C340 62 280 34 220 54S110 70 60 52 10 58 0 62Z" fill="#f4f0e7" filter="url(#torn)"/>
+    </svg>
+    <div style="height:70px"></div>
+  </section>
+
+  <!-- ================= PANEL 3 ================= -->
+  <section class="panel paper" id="wishes">
+    <svg class="wash top" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0H400V44C350 64 290 38 230 58S110 74 60 56 10 60 0 64Z" fill="#d8d0bd" opacity=".75" filter="url(#torn)"/>
+    </svg>
+    <svg class="branch tl" aria-hidden="true"><use href="#leafs"/></svg>
+
+    <div class="wish-head reveal">
+      <div class="caps">Wishes</div>
+      <div class="km">សារជូនពរ</div>
+      <div class="divider"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div>
+      <div class="km-sub">សូមសរសេរពាក្យជូនពរដល់គូស្វាមីភរិយា<br><span style="font-family:var(--serif);font-style:italic;font-size:.95rem">Leave a few words of love for the couple</span></div>
+    </div>
+    <form class="form reveal" id="wishForm" autocomplete="off">
+      <label class="sr" for="wName">ឈ្មោះ</label>
+      <input id="wName" maxlength="60" placeholder="ឈ្មោះរបស់អ្នក · Your name">
+      <label class="sr" for="wMsg">ពាក្យជូនពរ</label>
+      <textarea id="wMsg" rows="4" maxlength="500" required placeholder="សរសេរពាក្យជូនពរ · Write your wishes..."></textarea>
+      <button class="btn solid" type="submit" id="wSend">ផ្ញើពរ · SEND WISHES</button>
+      <div class="form-msg" id="wStatus" role="status"></div>
+    </form>
+    <div class="wishes" id="wishList" aria-live="polite"></div>
+
+    <div class="sec-title reveal"><span class="caps">Guest information</span><span class="km">ព័ត៌មានសម្រាប់ភ្ញៀវ</span></div>
+    <div class="divider"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/></svg></div>
+    <ul class="info">
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+        <div><h4>Location</h4><p>គេហដ្ឋានខាងស្រី ក្រុងបាត់ដំបង · Bride's home, Battambang City<br><a class="lnk" href="https://maps.app.goo.gl/trofWD7W4vPz9mzH9" target="_blank" rel="noopener">បើក Google Map →</a></p>
+          <img class="mapimg" src="img/map.jpg" alt="ផែនទីទៅផ្ទះការ" loading="lazy" data-zoom="img/map.jpg"></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
+        <div><h4>Two-day celebration</h4><p>ថ្ងៃទី២១ ពិធីកាត់សក់ និងបំពាក់ចិញ្ចៀន · ថ្ងៃទី២២ ពិធីចងដៃ និងជប់លៀងពេលល្ងាច<br><a class="lnk" href="#schedule">មើលរបៀបវារៈ →</a></p></div></li>
+      <li class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div><h4>Capture the moment</h4><p>យើងរីករាយនឹងឃើញរូបថតរបស់អ្នក! សូមផ្ញើមកតាម Telegram · We'd love to see your photos!</p></div></li>
+    </ul>
+
+    <div class="quote reveal">
+      <p>សូមគោរពជូនពរ ឯកឧត្តម លោកជំទាវ អស់លោក លោកស្រី អ្នកនាងកញ្ញា ជួបប្រទះតែពុទ្ធពរទាំង ៤ ប្រការ គឺ អាយុ វណ្ណៈ សុខៈ និងពលៈ កុំបីឃ្លៀងឃ្លាតឡើយ។</p>
+      <p class="en">Thank you from the bottom of our hearts for joining us on our special day. Your presence and warm wishes mean the world to us.</p>
+    </div>
+
+    <div class="arch reveal"><img src="img/arch.jpg" alt="រូបថតគូស្វាមីភរិយា" loading="lazy"></div>
+
+    <div class="sec-title reveal"><span class="caps">Our memories</span><span class="km">អនុស្សាវរីយ៍របស់យើង</span></div>
+    <div class="gallery reveal" id="gallery">
+      <img src="img/g1.jpg" alt="" loading="lazy"><img src="img/g2.jpg" alt="" loading="lazy">
+      <img src="img/g3.jpg" alt="" loading="lazy"><img src="img/g4.jpg" alt="" loading="lazy">
+      <img src="img/g5.jpg" alt="" loading="lazy"><img src="img/g6.jpg" alt="" loading="lazy">
+      <img src="img/g7.jpg" alt="" loading="lazy"><img src="img/g8.jpg" alt="" loading="lazy">
+      <img src="img/g9.jpg" alt="" loading="lazy"><img src="img/g10.jpg" alt="" loading="lazy">
+    </div>
+
+    <div class="apology reveal">
+      <h4>លិខិតសូមអភ័យទោស</h4>
+      <p>យើងខ្ញុំជាមាតាបិតា កូនប្រុស-កូនស្រី សូមអភ័យទោសក្នុងករណីពុំបានជូនសំបុត្រអញ្ជើញដោយផ្ទាល់។ សូមគោរពអញ្ជើញចូលរួមក្នុងពិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស-កូនស្រី របស់យើងខ្ញុំ ដោយមេត្តាភាព។</p>
+      <p class="en">We humbly apologize if we were unable to deliver this invitation to you in person.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="script">thank you</div>
+  <div class="caps">Chankrisna &amp; Sreylak · 22.11.2026</div>
+</footer>
+
+<button id="musicFab" type="button" aria-label="បើក / បិទតន្ត្រី"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button>
+<div id="lb" role="dialog" aria-label="រូបភាព"><button type="button" aria-label="បិទ">×</button><img alt=""></div>
+<audio id="music" src="music.mp3" preload="none" loop></audio>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* ---------- guest name on the cover (#g=ID) ---------- */
+  var q = new URLSearchParams(location.hash.length > 1 ? location.hash.slice(1) : location.search);
+  var gid = (q.get('g') || '').replace(/\D/g, '');
+  function showGuest(h, n) {
+    $('envHon').textContent = h || '';
+    $('envName').textContent = n;
+    if (!$('wName').value) $('wName').value = ((h ? h + ' ' : '') + n).slice(0, 60);
+  }
+  if (gid) {
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+    fetch('/api/guest?id=' + gid).then(function (r) { return r.json(); })
+      .then(function (d) { if (d && d.name) showGuest(d.hon, d.name); }).catch(function () {});
+  }
+
+  /* ---------- music ---------- */
+  var au = $('music'), fab = $('musicFab');
+  var PLAY = '<path d="M7 4l13 8-13 8z"/>', PAUSE = '<path d="M6 4h4v16H6zM14 4h4v16h-4z"/>';
+  function fmt(s) { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ':' + ('0' + s % 60).slice(-2); }
+  function sync() {
+    var on = !au.paused;
+    $('ppIcon').innerHTML = on ? PAUSE : PLAY;
+    fab.classList.toggle('playing', on);
+  }
+  function toggle() { if (au.paused) au.play().catch(function () {}); else au.pause(); }
+  au.addEventListener('play', sync); au.addEventListener('pause', sync);
+  au.addEventListener('loadedmetadata', function () { $('tDur').textContent = fmt(au.duration); });
+  au.addEventListener('timeupdate', function () {
+    $('tCur').textContent = fmt(au.currentTime);
+    if (au.duration) $('barFill').style.width = (au.currentTime / au.duration * 100) + '%';
+  });
+  $('ppBtn').onclick = toggle; fab.onclick = toggle;
+  $('back10').onclick = function () { au.currentTime = Math.max(0, au.currentTime - 10); };
+  $('fwd10').onclick = function () { if (au.duration) au.currentTime = Math.min(au.duration - 1, au.currentTime + 10); };
+  $('bar').onclick = function (e) { var r = this.getBoundingClientRect(); if (au.duration) au.currentTime = (e.clientX - r.left) / r.width * au.duration; };
+
+  /* ---------- open cover ---------- */
+  $('openBtn').onclick = function () {
+    $('cover').classList.add('gone');
+    document.body.classList.remove('locked');
+    fab.classList.add('on');
+    au.play().catch(function () {});
+  };
+
+  /* ---------- countdown ---------- */
+  var target = new Date('2026-11-21T13:00:00+07:00').getTime();
+  function tick() {
+    var d = target - Date.now();
+    if (d <= 0) {
+      $('count').outerHTML = '<div class="count-done">Happily ever after</div><div class="date-km">ថ្ងៃមង្គលបានមកដល់ហើយ</div>';
+      clearInterval(timer); return;
+    }
+    var p = function (n) { return ('0' + n).slice(-2); };
+    $('cD').textContent = p(Math.floor(d / 864e5));
+    $('cH').textContent = p(Math.floor(d / 36e5) % 24);
+    $('cM').textContent = p(Math.floor(d / 6e4) % 60);
+    $('cS').textContent = p(Math.floor(d / 1e3) % 60);
+  }
+  var timer = setInterval(tick, 1000); tick();
+
+  /* ---------- reveal on scroll ---------- */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+  } else document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+
+  /* ---------- lightbox ---------- */
+  var lb = $('lb'), lbi = lb.querySelector('img');
+  function zoom(src) { lbi.src = src; lb.classList.add('on'); }
+  document.addEventListener('click', function (e) {
+    var z = e.target.closest('[data-zoom]');
+    if (z) return zoom(z.getAttribute('data-zoom'));
+    if (e.target.closest('#gallery img')) return zoom(e.target.src);
+  });
+  lb.onclick = function (e) { if (e.target !== lbi) lb.classList.remove('on'); };
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('on'); });
+
+  /* ---------- wishes ---------- */
+  var list = $('wishList');
+  function ago(t) {
+    var s = (Date.now() - t) / 1000;
+    if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' នាទីមុន';
+    if (s < 86400) return Math.round(s / 3600) + ' ម៉ោងមុន';
+    return new Date(t).toLocaleDateString('en-GB');
+  }
+  function card(w, top) {
+    var el = document.createElement('div'); el.className = 'w';
+    var n = document.createElement('div'); n.className = 'n'; n.textContent = w.name || 'ភ្ញៀវកិត្តិយស';
+    var m = document.createElement('div'); m.className = 'm'; m.textContent = w.msg;
+    var a = document.createElement('div'); a.className = 'ago'; a.textContent = ago(w.t);
+    el.append(n, m, a);
+    if (top) list.prepend(el); else list.append(el);
+  }
+  fetch('/api/wishes').then(function (r) { return r.json(); })
+    .then(function (d) { (d.wishes || []).forEach(function (w) { card(w, false); }); }).catch(function () {});
+
+  $('wishForm').onsubmit = function (e) {
+    e.preventDefault();
+    var st = $('wStatus'), btn = $('wSend');
+    var name = $('wName').value.trim(), msg = $('wMsg').value.trim();
+    st.className = 'form-msg';
+    if (msg.length < 2) { st.textContent = 'សូមសរសេរពាក្យជូនពរ'; st.className = 'form-msg err'; return; }
+    btn.disabled = true; st.textContent = 'កំពុងផ្ញើ...';
+    fetch('/api/wishes', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: name, message: msg }) })
+      .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+      .then(function (x) {
+        if (x.d && x.d.ok) {
+          $('wMsg').value = '';
+          if (x.d.pending) st.textContent = 'អរគុណ! ពររបស់អ្នកនឹងបង្ហាញបន្ទាប់ពីម្ចាស់កម្មវិធីអនុម័ត 🌿';
+          else { card(x.d.wish, true); st.textContent = 'អរគុណសម្រាប់ពាក្យជូនពរ! 🌿'; }
+        } else {
+          st.className = 'form-msg err';
+          st.textContent = x.s === 429 ? 'អ្នកបានផ្ញើច្រើនដងពេក សូមរង់ចាំបន្តិច'
+            : (x.d && x.d.error === 'link') ? 'សូមកុំដាក់ link ក្នុងពាក្យជូនពរ'
+            : (x.d && x.d.disabled) ? 'មុខងារនេះមិនទាន់ដំណើរការ' : 'មានបញ្ហា សូមព្យាយាមម្តងទៀត';
+        }
+      })
+      .catch(function () { st.className = 'form-msg err'; st.textContent = 'មានបញ្ហាអ៊ីនធឺណិត សូមព្យាយាមម្តងទៀត'; })
+      .then(function () { btn.disabled = false; });
+  };
+})();
+</script>
+</body>
+</html>
