@@ -1,33 +1,20 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Wedding Invitation//Van Chankrisna & Min Sreylak//KM
+PRODID:-//Wedding Invitation//Is Khun & Min Sokneng//KM
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:wedding-20261122@chankrisna-sreylak.com
-DTSTAMP:20261005T000000Z
-DTSTART:20261122T100000Z
-DTEND:20261122T150000Z
-SUMMARY:ពិធីជប់លៀងមង្គលការ - Van 
- Chankrisna & Min Sreylak
-DESCRIPTION:ពិធីសិរីមង្គលអាពាហ៍ពិ
- ពាហ៍របស់យើងខ្ញុំ។ The wedding dinner 
- reception will be held on November 22\, 2026\, at 5:00 PM.\n\n📍 Google 
- Map: https://maps.app.goo.gl/trofWD7W4vPz9mzH9
-LOCATION:Battambang City
-URL:https://maps.app.goo.gl/trofWD7W4vPz9mzH9
+UID:wedding-20261219@khun-sokneng
+DTSTAMP:20261120T000000Z
+DTSTART:20261219T100000Z
+DTEND:20261219T150000Z
+SUMMARY:Wedding of Is Khun & Min Sokneng
+DESCRIPTION:Reception & dinner – Saturday\, December 19\, 2026 at 5:00 PM
 STATUS:CONFIRMED
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:ពិធីជប់លៀងមង្គលការ 
- ថ្ងៃស្អែក / Wedding reception tomorrow
+DESCRIPTION:Wedding reception tomorrow
 TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:ពិធីជប់លៀងមង្គលការ ២ 
- ម៉ោងទៀត / Wedding reception in 2 hours
-TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 END:VCALENDAR

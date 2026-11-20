@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ធៀបការ វ៉ាន ច័ន្ទគ្រឹស្នា & មិន ស្រីលក្ខ
+   ធៀបការ អ៉ីស ឃុន & មិន សុខណេង
    --------------------------------------------------------------------------
    ឈ្មោះភ្ញៀវ:  index.html?to=សុខ%20ចាន់ធី&h=លោក
                បង្កើត link ងាយៗ: បើក  index.html#link
@@ -45,7 +45,7 @@
   };
 
   /* ---------- រាប់ថយក្រោយ ---------- */
-  var target = new Date('2026-11-21T13:00:00+07:00').getTime();
+  var target = new Date('2026-12-18T13:00:00+07:00').getTime();
   var p2 = function (n) { return ('0' + n).slice(-2); };
   function tick() {
     var d = target - Date.now();
@@ -99,7 +99,7 @@
     function build() {
       var n = $('mkN').value.trim(), h = $('mkH').value, u = location.origin + location.pathname;
       if (n) u += '?to=' + encodeURIComponent(n) + (h ? '&h=' + encodeURIComponent(h) : '');
-      $('mkOut').value = n ? 'សូមគោរពអញ្ជើញ ' + (h ? h + ' ' : '') + n + ' ចូលរួមពិធីមង្គលការរបស់យើងខ្ញុំ វ៉ាន ច័ន្ទគ្រឹស្នា & មិន ស្រីលក្ខ ថ្ងៃទី២១-២២ ខែវិច្ឆិកា ឆ្នាំ២០២៦ 🌿\n' + u : u;
+      $('mkOut').value = n ? 'សូមគោរពអញ្ជើញ ' + (h ? h + ' ' : '') + n + ' ចូលរួមពិធីមង្គលការរបស់យើងខ្ញុំ អ៉ីស ឃុន & មិន សុខណេង ថ្ងៃទី១៨-១៩ ខែធ្នូ ឆ្នាំ២០២៦ 🌿\n' + u : u;
     }
     $('mkN').oninput = build; $('mkH').onchange = build; build();
     $('mkCopy').onclick = function () {
