@@ -33,8 +33,7 @@ button{font:inherit;cursor:pointer}
 .branch.tl{top:-8px;left:-14px;transform:scaleX(-1)}
 .branch.bl{bottom:-10px;left:-18px;transform:rotate(180deg) scaleX(-1)}
 .pad-top{padding-top:110px}
-#wishes>.wash.top,#wishes .branch.tl{display:none}
-.wish-head{padding-top:40px}
+#info>.wash.top,#info .branch.tl{display:none}
 
 /* ===== typography ===== */
 .caps{font-family:var(--serif);letter-spacing:.22em;text-transform:uppercase;font-weight:500}
@@ -148,15 +147,6 @@ button{font:inherit;cursor:pointer}
 .qr img{border-radius:6px}
 
 /* ===== panel 3 ===== */
-.wish-head{text-align:center;padding-top:84px}
-.wish-head .caps{font-size:1.6rem;letter-spacing:.2em;color:var(--ink)}
-.wish-head .km{font-family:var(--km-title);color:var(--olive);font-size:.9rem}
-.form{margin-top:16px;display:grid;gap:10px}
-.form input,.form textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.6);font:inherit;font-size:.88rem;color:var(--ink);resize:none;outline:none;transition:border-color .2s,box-shadow .2s}
-.form input:focus,.form textarea:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(139,154,124,.2)}
-.form .btn{justify-self:center;padding:11px 26px;font-weight:700}
-.form-msg{text-align:center;font-size:.8rem;min-height:1.3em;color:var(--olive)}
-.form-msg.err{color:#a0483a}
 
 .info{list-style:none;padding:0;margin:8px 0 0}
 .info li{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line)}
@@ -175,12 +165,6 @@ button{font:inherit;cursor:pointer}
 .arch{margin:30px auto 0;width:86%;aspect-ratio:3/4;border-radius:999px 999px 6px 6px;overflow:hidden;border:6px solid #fff;box-shadow:0 20px 40px -20px rgba(50,55,40,.6)}
 .arch img{width:100%;height:100%;object-fit:cover}
 
-.wishes{display:grid;gap:10px;margin-top:14px;max-height:520px;overflow:auto;padding-right:4px}
-.wishes:empty::before{content:"សូមជាអ្នកដំបូងដែលផ្ញើពរ 🌿";display:block;text-align:center;font-size:.82rem;color:var(--muted);padding:12px}
-.w{padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.55);border:1px solid var(--line)}
-.w .n{font-weight:700;font-size:.84rem;color:var(--olive)}
-.w .m{font-size:.84rem;white-space:pre-wrap;word-break:break-word;margin-top:2px}
-.w .ago{font-size:.68rem;color:var(--muted);margin-top:4px}
 
 .gallery{columns:2;column-gap:8px;margin-top:14px}
 .gallery img{width:100%;margin-bottom:8px;border-radius:6px;cursor:zoom-in;break-inside:avoid}

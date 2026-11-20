@@ -3,24 +3,7 @@
    --------------------------------------------------------------------------
    ឈ្មោះភ្ញៀវ:  index.html?to=សុខ%20ចាន់ធី&h=លោក
                បង្កើត link ងាយៗ: បើក  index.html#link
-   សារជូនពរ:   រក្សាទុកក្នុង Supabase (ឥតគិតថ្លៃ) — បំពេញ SUPABASE_URL និង SUPABASE_KEY ខាងក្រោម
-               បើទុកទទេ ផ្នែកសារជូនពរនឹងបង្ហាញថា "មិនទាន់ដំណើរការ"
-
-   SQL សម្រាប់ Supabase (SQL Editor → New query → Run):
-     create table wishes (
-       id bigint generated always as identity primary key,
-       name text check (char_length(name) <= 60),
-       message text not null check (char_length(message) between 2 and 500),
-       created_at timestamptz not null default now()
-     );
-     alter table wishes enable row level security;
-     create policy "anyone can read"  on wishes for select using (true);
-     create policy "anyone can write" on wishes for insert with check (true);
-   លុបសារមិនល្អ: Supabase → Table Editor → wishes → ជ្រើសជួរ → Delete
    ========================================================================== */
-
-var SUPABASE_URL = '';   // ឧ. https://abcdxyz.supabase.co
-var SUPABASE_KEY = '';   // Project Settings → API → anon public key
 
 (function () {
   var $ = function (id) { return document.getElementById(id); };
@@ -32,7 +15,6 @@ var SUPABASE_KEY = '';   // Project Settings → API → anon public key
   if (guest) {
     $('envHon').textContent = hon;
     $('envName').textContent = guest;
-    $('wName').value = ((hon ? hon + ' ' : '') + guest).slice(0, 60);
   }
 
   /* ---------- តន្ត្រី ---------- */
@@ -100,58 +82,6 @@ var SUPABASE_KEY = '';   // Project Settings → API → anon public key
   });
   lb.onclick = function (e) { if (e.target !== lbi) lb.classList.remove('on'); };
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') lb.classList.remove('on'); });
-
-  /* ---------- សារជូនពរ (Supabase) ---------- */
-  var list = $('wishList'), st = $('wStatus'), btn = $('wSend');
-  var ready = !!(SUPABASE_URL && SUPABASE_KEY);
-  var API = SUPABASE_URL.replace(/\/$/, '') + '/rest/v1/wishes';
-  var HEAD = { apikey: SUPABASE_KEY, Authorization: 'Bearer ' + SUPABASE_KEY, 'Content-Type': 'application/json' };
-  var LINK_RE = /(https?:\/\/|www\.|t\.me\/|wa\.me\/|bit\.ly|\.(com|net|org|xyz|top|info|io|me|link|site|online|club|vip|cc|ly|app|shop|store|live|kh|asia|biz|co)\b)/i;
-
-  function ago(iso) {
-    var t = new Date(iso).getTime(), s = (Date.now() - t) / 1000;
-    if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' នាទីមុន';
-    if (s < 86400) return Math.round(s / 3600) + ' ម៉ោងមុន';
-    return new Date(t).toLocaleDateString('en-GB');
-  }
-  function card(w, top) {
-    var el = document.createElement('div'); el.className = 'w';
-    var n = document.createElement('div'); n.className = 'n'; n.textContent = w.name || 'ភ្ញៀវកិត្តិយស';
-    var m = document.createElement('div'); m.className = 'm'; m.textContent = w.message;
-    var a = document.createElement('div'); a.className = 'ago'; a.textContent = ago(w.created_at);
-    el.append(n, m, a);
-    if (top) list.prepend(el); else list.append(el);
-  }
-  function say(t, err) { st.textContent = t; st.className = 'form-msg' + (err ? ' err' : ''); }
-
-  if (ready) {
-    fetch(API + '?select=name,message,created_at&order=created_at.desc&limit=100', { headers: HEAD })
-      .then(function (r) { return r.ok ? r.json() : []; })
-      .then(function (rows) { rows.forEach(function (w) { card(w, false); }); })
-      .catch(function () {});
-  }
-
-  $('wishForm').onsubmit = function (e) {
-    e.preventDefault();
-    var name = $('wName').value.trim().slice(0, 60), msg = $('wMsg').value.trim().slice(0, 500);
-    if (msg.length < 2) return say('សូមសរសេរពាក្យជូនពរ', true);
-    if (LINK_RE.test(name + ' ' + msg)) return say('សូមកុំដាក់ link ក្នុងពាក្យជូនពរ', true);
-    if (!ready) return say('មុខងារនេះមិនទាន់ដំណើរការ', true);
-    var last = +sessionStorage.getItem('wishAt') || 0;
-    if (Date.now() - last < 20000) return say('សូមរង់ចាំបន្តិច មុននឹងផ្ញើម្តងទៀត', true);
-
-    btn.disabled = true; say('កំពុងផ្ញើ...');
-    fetch(API, { method: 'POST', headers: Object.assign({ Prefer: 'return=representation' }, HEAD), body: JSON.stringify({ name: name, message: msg }) })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (rows) {
-        try { sessionStorage.setItem('wishAt', Date.now()); } catch (x) {}
-        $('wMsg').value = '';
-        card(rows[0] || { name: name, message: msg, created_at: new Date().toISOString() }, true);
-        say('អរគុណសម្រាប់ពាក្យជូនពរ! 🌿');
-      })
-      .catch(function () { say('មានបញ្ហា សូមព្យាយាមម្តងទៀត', true); })
-      .then(function () { btn.disabled = false; });
-  };
 
   /* ---------- បង្កើត link ភ្ញៀវ (បើក index.html#link) ---------- */
   function maker() {
