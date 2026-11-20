@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Wedding Invitation//Is Khun & Min Sokneng//KM
+PRODID:-//Wedding Invitation//Es Khun & Min Sokneng//KM
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
@@ -8,7 +8,7 @@ UID:wedding-20261219@khun-sokneng
 DTSTAMP:20261120T000000Z
 DTSTART:20261219T100000Z
 DTEND:20261219T150000Z
-SUMMARY:Wedding of Is Khun & Min Sokneng
+SUMMARY:Wedding of Es Khun & Min Sokneng
 DESCRIPTION:Reception & dinner – Saturday\, December 19\, 2026 at 5:00 PM
 STATUS:CONFIRMED
 BEGIN:VALARM
