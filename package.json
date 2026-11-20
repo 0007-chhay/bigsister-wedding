@@ -1,7 +1,0 @@
-{
-  "name": "wedding-sage",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Wedding invitation – Van Chankrisna & Min Sreylak (sage theme)",
-  "engines": { "node": ">=18" }
-}
